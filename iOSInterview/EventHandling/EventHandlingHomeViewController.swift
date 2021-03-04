@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EventHandlingHomeViewController.swift
 //  iOSInterview
 //
 //  Created by 侯逸仙 on 2021/3/4.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EventHandlingHomeViewController: UIViewController {
 
     private var tableView: UITableView!
 
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "事件处理"
         tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension EventHandlingHomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
@@ -40,7 +41,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         var text = "未完待续"
         switch indexPath.row {
         case 0:
-            text = "事件传递和响应者链"
+            text = ""
         default:
             break
         }
@@ -51,11 +52,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let vc = EventHandlingHomeViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            break
         default:
             break
         }
     }
 }
-
