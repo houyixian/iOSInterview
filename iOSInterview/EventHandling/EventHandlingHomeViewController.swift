@@ -15,6 +15,7 @@ class EventHandlingHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         navigationItem.title = "事件处理"
         tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -41,7 +42,7 @@ extension EventHandlingHomeViewController: UITableViewDataSource, UITableViewDel
         var text = "未完待续"
         switch indexPath.row {
         case 0:
-            text = ""
+            text = "UIControl+UIGestureRecognizer"
         default:
             break
         }
@@ -52,7 +53,8 @@ extension EventHandlingHomeViewController: UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            break
+            let vc = UIControlMixUIGestureRecognizerViewController()
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }
