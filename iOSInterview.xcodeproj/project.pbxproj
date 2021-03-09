@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B699D2025F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B699D1F25F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift */; };
 		5866841725F0ECC500A662ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866841625F0ECC500A662ED /* AppDelegate.swift */; };
 		5866841925F0ECC500A662ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866841825F0ECC500A662ED /* SceneDelegate.swift */; };
 		5866841B25F0ECC500A662ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866841A25F0ECC500A662ED /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B699D1F25F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubviewOutOfBoundsToSuperviewViewController.swift; sourceTree = "<group>"; };
 		5866841325F0ECC500A662ED /* iOSInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5866841625F0ECC500A662ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5866841825F0ECC500A662ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				5866842C25F0F4A300A662ED /* EventHandlingHomeViewController.swift */,
 				5866843525F0FE6400A662ED /* UIControl+UIGestureRecognizerViewController.swift */,
+				3B699D1F25F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift */,
 			);
 			path = EventHandling;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				5866841B25F0ECC500A662ED /* ViewController.swift in Sources */,
 				5866841725F0ECC500A662ED /* AppDelegate.swift in Sources */,
 				5866843225F0F75500A662ED /* DescribedView.swift in Sources */,
+				3B699D2025F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift in Sources */,
 				5866841925F0ECC500A662ED /* SceneDelegate.swift in Sources */,
 				5866843625F0FE6400A662ED /* UIControl+UIGestureRecognizerViewController.swift in Sources */,
 				5866842D25F0F4A300A662ED /* EventHandlingHomeViewController.swift in Sources */,

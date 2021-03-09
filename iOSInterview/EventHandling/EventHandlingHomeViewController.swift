@@ -43,6 +43,8 @@ extension EventHandlingHomeViewController: UITableViewDataSource, UITableViewDel
         switch indexPath.row {
         case 0:
             text = "UIControl+UIGestureRecognizer"
+        case 1:
+            text = "subview超出了父视图"
         default:
             break
         }
@@ -54,6 +56,9 @@ extension EventHandlingHomeViewController: UITableViewDataSource, UITableViewDel
         switch indexPath.row {
         case 0:
             let vc = UIControlMixUIGestureRecognizerViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = SubviewOutOfBoundsToSuperviewViewController()
             navigationController?.pushViewController(vc, animated: true)
         default:
             break
