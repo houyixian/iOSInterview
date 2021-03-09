@@ -18,6 +18,10 @@
 		5866843225F0F75500A662ED /* DescribedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866843125F0F75500A662ED /* DescribedView.swift */; };
 		5866843625F0FE6400A662ED /* UIControl+UIGestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866843525F0FE6400A662ED /* UIControl+UIGestureRecognizerViewController.swift */; };
 		5866843A25F1008300A662ED /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5866843925F1008300A662ED /* SnapKit */; };
+		5870BBF725F1DBEF00116656 /* DragableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870BBF625F1DBEF00116656 /* DragableViewController.swift */; };
+		5870BBFB25F1DCAF00116656 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870BBFA25F1DCAF00116656 /* NormalCollectionViewCell.swift */; };
+		5870BBFE25F207AA00116656 /* DragableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870BBFD25F207AA00116656 /* DragableView.swift */; };
+		58A60FFF25F613E80096A3A3 /* DragablePlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A60FFE25F613E80096A3A3 /* DragablePlusTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		5866842C25F0F4A300A662ED /* EventHandlingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandlingHomeViewController.swift; sourceTree = "<group>"; };
 		5866843125F0F75500A662ED /* DescribedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribedView.swift; sourceTree = "<group>"; };
 		5866843525F0FE6400A662ED /* UIControl+UIGestureRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+UIGestureRecognizerViewController.swift"; sourceTree = "<group>"; };
+		5870BBF625F1DBEF00116656 /* DragableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableViewController.swift; sourceTree = "<group>"; };
+		5870BBFA25F1DCAF00116656 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
+		5870BBFD25F207AA00116656 /* DragableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableView.swift; sourceTree = "<group>"; };
+		58A60FFE25F613E80096A3A3 /* DragablePlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragablePlusTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		5866841525F0ECC500A662ED /* iOSInterview */ = {
 			isa = PBXGroup;
 			children = (
+				5870BBF525F1DB2200116656 /* Demo */,
 				5866843025F0F67800A662ED /* ReusableUIViews */,
 				5866842B25F0F3F600A662ED /* EventHandling */,
 				5866841625F0ECC500A662ED /* AppDelegate.swift */,
@@ -95,6 +104,25 @@
 				5866843125F0F75500A662ED /* DescribedView.swift */,
 			);
 			path = ReusableUIViews;
+			sourceTree = "<group>";
+		};
+		5870BBF525F1DB2200116656 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5870BBF925F1DC5F00116656 /* DragableCollectionView */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5870BBF925F1DC5F00116656 /* DragableCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5870BBF625F1DBEF00116656 /* DragableViewController.swift */,
+				5870BBFA25F1DCAF00116656 /* NormalCollectionViewCell.swift */,
+				5870BBFD25F207AA00116656 /* DragableView.swift */,
+				58A60FFE25F613E80096A3A3 /* DragablePlusTableViewCell.swift */,
+			);
+			path = DragableCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,11 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5866841B25F0ECC500A662ED /* ViewController.swift in Sources */,
+				5870BBFB25F1DCAF00116656 /* NormalCollectionViewCell.swift in Sources */,
 				5866841725F0ECC500A662ED /* AppDelegate.swift in Sources */,
 				5866843225F0F75500A662ED /* DescribedView.swift in Sources */,
 				3B699D2025F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift in Sources */,
 				5866841925F0ECC500A662ED /* SceneDelegate.swift in Sources */,
+				58A60FFF25F613E80096A3A3 /* DragablePlusTableViewCell.swift in Sources */,
+				5870BBFE25F207AA00116656 /* DragableView.swift in Sources */,
 				5866843625F0FE6400A662ED /* UIControl+UIGestureRecognizerViewController.swift in Sources */,
+				5870BBF725F1DBEF00116656 /* DragableViewController.swift in Sources */,
 				5866842D25F0F4A300A662ED /* EventHandlingHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

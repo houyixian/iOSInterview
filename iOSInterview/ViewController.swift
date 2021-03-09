@@ -42,6 +42,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             text = "事件传递和响应者链"
+        case 5:
+            text = "可拖拽排列的collectionview"
         default:
             break
         }
@@ -53,6 +55,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             let vc = EventHandlingHomeViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 5:
+            let vc = DragableViewController()
             navigationController?.pushViewController(vc, animated: true)
         default:
             break
