@@ -27,6 +27,16 @@ class ViewController: UIViewController {
         let rightConstraints = NSLayoutConstraint(item: tableView as Any, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0)
         let bottomConstraints = NSLayoutConstraint(item: tableView as Any, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
         NSLayoutConstraint.activate([leftConstraints, rightConstraints, topConstraints, bottomConstraints])
+        
+        let baseView = RainGiftPopUpBaseView()
+        baseView.isShowClose = true
+//        baseView.isShowBottomFuctionView = true
+        baseView.contentHeightStyle = .height280
+//        view.addSubview(baseView)
+//        baseView.snp.makeConstraints { (m) in
+//            m.edges.equalToSuperview()
+//        }
+        baseView.show(in: view)
     }
 
 }
@@ -44,6 +54,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             text = "事件传递和响应者链"
         case 5:
             text = "可拖拽排列的collectionview"
+        case 6:
+            text = "不规则的渐变视图"
         default:
             break
         }
@@ -58,6 +70,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             navigationController?.pushViewController(vc, animated: true)
         case 5:
             let vc = DragableViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 6:
+            let vc = IrregularGradientViewController()
             navigationController?.pushViewController(vc, animated: true)
         default:
             break

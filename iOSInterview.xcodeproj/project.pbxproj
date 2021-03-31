@@ -22,6 +22,9 @@
 		5870BBFB25F1DCAF00116656 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870BBFA25F1DCAF00116656 /* NormalCollectionViewCell.swift */; };
 		5870BBFE25F207AA00116656 /* DragableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870BBFD25F207AA00116656 /* DragableView.swift */; };
 		58A60FFF25F613E80096A3A3 /* DragablePlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A60FFE25F613E80096A3A3 /* DragablePlusTableViewCell.swift */; };
+		58BAB9792602211700337917 /* IrregularGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BAB9782602211700337917 /* IrregularGradientView.swift */; };
+		58BAB97D2602214400337917 /* IrregularGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BAB97C2602214400337917 /* IrregularGradientViewController.swift */; };
+		58BAB9832603265400337917 /* RainGiftPopUpBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BAB9822603265400337917 /* RainGiftPopUpBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		5870BBFA25F1DCAF00116656 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
 		5870BBFD25F207AA00116656 /* DragableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableView.swift; sourceTree = "<group>"; };
 		58A60FFE25F613E80096A3A3 /* DragablePlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragablePlusTableViewCell.swift; sourceTree = "<group>"; };
+		58BAB9782602211700337917 /* IrregularGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradientView.swift; sourceTree = "<group>"; };
+		58BAB97C2602214400337917 /* IrregularGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradientViewController.swift; sourceTree = "<group>"; };
+		58BAB9822603265400337917 /* RainGiftPopUpBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainGiftPopUpBaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		5866841525F0ECC500A662ED /* iOSInterview */ = {
 			isa = PBXGroup;
 			children = (
+				58BAB980260324F100337917 /* WorkPreDev */,
 				5870BBF525F1DB2200116656 /* Demo */,
 				5866843025F0F67800A662ED /* ReusableUIViews */,
 				5866842B25F0F3F600A662ED /* EventHandling */,
@@ -109,6 +116,7 @@
 		5870BBF525F1DB2200116656 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				58BAB9772602206C00337917 /* ComplicatedUIView */,
 				5870BBF925F1DC5F00116656 /* DragableCollectionView */,
 			);
 			path = Demo;
@@ -123,6 +131,31 @@
 				58A60FFE25F613E80096A3A3 /* DragablePlusTableViewCell.swift */,
 			);
 			path = DragableCollectionView;
+			sourceTree = "<group>";
+		};
+		58BAB9772602206C00337917 /* ComplicatedUIView */ = {
+			isa = PBXGroup;
+			children = (
+				58BAB9782602211700337917 /* IrregularGradientView.swift */,
+				58BAB97C2602214400337917 /* IrregularGradientViewController.swift */,
+			);
+			path = ComplicatedUIView;
+			sourceTree = "<group>";
+		};
+		58BAB980260324F100337917 /* WorkPreDev */ = {
+			isa = PBXGroup;
+			children = (
+				58BAB9812603251000337917 /* GiftRain */,
+			);
+			path = WorkPreDev;
+			sourceTree = "<group>";
+		};
+		58BAB9812603251000337917 /* GiftRain */ = {
+			isa = PBXGroup;
+			children = (
+				58BAB9822603265400337917 /* RainGiftPopUpBaseView.swift */,
+			);
+			path = GiftRain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,10 +238,13 @@
 				5870BBFB25F1DCAF00116656 /* NormalCollectionViewCell.swift in Sources */,
 				5866841725F0ECC500A662ED /* AppDelegate.swift in Sources */,
 				5866843225F0F75500A662ED /* DescribedView.swift in Sources */,
+				58BAB9832603265400337917 /* RainGiftPopUpBaseView.swift in Sources */,
+				58BAB9792602211700337917 /* IrregularGradientView.swift in Sources */,
 				3B699D2025F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift in Sources */,
 				5866841925F0ECC500A662ED /* SceneDelegate.swift in Sources */,
 				58A60FFF25F613E80096A3A3 /* DragablePlusTableViewCell.swift in Sources */,
 				5870BBFE25F207AA00116656 /* DragableView.swift in Sources */,
+				58BAB97D2602214400337917 /* IrregularGradientViewController.swift in Sources */,
 				5866843625F0FE6400A662ED /* UIControl+UIGestureRecognizerViewController.swift in Sources */,
 				5870BBF725F1DBEF00116656 /* DragableViewController.swift in Sources */,
 				5866842D25F0F4A300A662ED /* EventHandlingHomeViewController.swift in Sources */,
