@@ -7,10 +7,11 @@
 
 import UIKit
 
+/// 子视图超出了父视图如何响应
 class SubviewOutOfBoundsToSuperviewViewController: UIViewController {
     
-    private let superView: DescribedView = {
-        let view = DescribedView(title: "superView", position: .topCenter)
+    private let superView: EnLargedDescribedView = {
+        let view = EnLargedDescribedView(title: "superView", position: .topCenter)
         view.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
         return view
     }()
@@ -20,7 +21,6 @@ class SubviewOutOfBoundsToSuperviewViewController: UIViewController {
         view.backgroundColor = .red
         return view
     }()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +33,27 @@ class SubviewOutOfBoundsToSuperviewViewController: UIViewController {
         subview1.snp.makeConstraints { (m) in
             m.centerY.equalToSuperview()
             m.height.width.equalTo(200)
-            m.leading.equalToSuperview().offset(-50)
+            m.leading.equalToSuperview().offset(-80)
         }
     }
 
+}
+
+private class EnLargedDescribedView: DescribedView {
+    
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        var isInsideSelf = super.point(inside: point, with: event)
+        if !isInsideSelf {
+            // 如果不在自身中，判断是不是在超出自身的subView里面
+            for subview in subviews {
+                let convertedPoint = convert(point, to: subview)
+                if subview.point(inside: convertedPoint, with: event) {
+                    isInsideSelf = true
+                    break
+                }
+            }
+        }
+        print("point \(point)\(isInsideSelf ? "在" : "不在")\(title)中")
+        return isInsideSelf
+    }
 }

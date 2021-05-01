@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  WorkPreDevHomeViewController.swift
 //  iOSInterview
 //
-//  Created by 侯逸仙 on 2021/3/4.
+//  Created by 侯逸仙 on 2021/4/17.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class WorkPreDevHomeViewController: UIViewController {
 
     private var tableView: UITableView!
 
@@ -15,8 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        navigationItem.title = "工作预开发模块"
         tableView = UITableView()
-        navigationController?.navigationBar.isTranslucent = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension WorkPreDevHomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
@@ -41,13 +42,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         var text = "未完待续"
         switch indexPath.row {
         case 0:
-            text = "事件传递和响应者链"
-        case 5:
-            text = "可拖拽排列的collectionview"
-        case 6:
-            text = "不规则的渐变视图"
-        case 7:
-            text = "工作预开发模块"
+            text = "礼物雨弹窗"
         default:
             break
         }
@@ -58,20 +53,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let vc = EventHandlingHomeViewController()
-            navigationController?.pushViewController(vc, animated: true)
-        case 5:
-            let vc = DragableViewController()
-            navigationController?.pushViewController(vc, animated: true)
-        case 6:
-            let vc = IrregularGradientViewController()
-            navigationController?.pushViewController(vc, animated: true)
-        case 7:
-            let vc = WorkPreDevHomeViewController()
+            let vc = RainGiftPopUpBaseViewController()
             navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }
     }
 }
-

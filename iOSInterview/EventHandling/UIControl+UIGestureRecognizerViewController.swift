@@ -40,11 +40,12 @@ class UIControlMixUIGestureRecognizerViewController: UIViewController {
     }
 
     @objc private func tappedSuperView() {
-        print("tappedSuperView")
+        CommonToastManager.showInWindow(text: "选中了superView")
+        print("tapGesture 选中了superView")
     }
 
     @objc private func tappedUIButton() {
-        print("tappedUIButton")
+        CommonToastManager.showInWindow(text: "tappedUIButton")
     }
 
 }

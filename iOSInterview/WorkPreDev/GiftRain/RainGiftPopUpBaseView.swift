@@ -26,7 +26,7 @@ public class RainGiftPopUpBaseView: UIView {
                     m.height.equalTo(contentHeightStyle.rawValue + 50)
                 }
             }
-            contentView.snp.makeConstraints { (m) in
+            contentView.snp.updateConstraints { (m) in
                 m.height.equalTo(contentHeightStyle.rawValue)
             }
         }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3B699D2025F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B699D1F25F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift */; };
+		3B8981C7262AFD97003A1E26 /* WorkPreDevHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8981C6262AFD97003A1E26 /* WorkPreDevHomeViewController.swift */; };
+		3B8981CA262AFE2A003A1E26 /* RainGiftPopUpBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8981C9262AFE2A003A1E26 /* RainGiftPopUpBaseViewController.swift */; };
+		3B980581262A77CE00DBD80C /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3B980580262A77CE00DBD80C /* MBProgressHUD */; };
+		3B980585262A856E00DBD80C /* CommonToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B980584262A856E00DBD80C /* CommonToastManager.swift */; };
 		5866841725F0ECC500A662ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866841625F0ECC500A662ED /* AppDelegate.swift */; };
 		5866841925F0ECC500A662ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866841825F0ECC500A662ED /* SceneDelegate.swift */; };
 		5866841B25F0ECC500A662ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866841A25F0ECC500A662ED /* ViewController.swift */; };
@@ -29,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		3B699D1F25F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubviewOutOfBoundsToSuperviewViewController.swift; sourceTree = "<group>"; };
+		3B8981C6262AFD97003A1E26 /* WorkPreDevHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPreDevHomeViewController.swift; sourceTree = "<group>"; };
+		3B8981C9262AFE2A003A1E26 /* RainGiftPopUpBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainGiftPopUpBaseViewController.swift; sourceTree = "<group>"; };
+		3B980584262A856E00DBD80C /* CommonToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonToastManager.swift; sourceTree = "<group>"; };
 		5866841325F0ECC500A662ED /* iOSInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5866841625F0ECC500A662ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5866841825F0ECC500A662ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B980581262A77CE00DBD80C /* MBProgressHUD in Frameworks */,
 				5866843A25F1008300A662ED /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B980583262A852D00DBD80C /* GlobalManager */ = {
+			isa = PBXGroup;
+			children = (
+				3B980584262A856E00DBD80C /* CommonToastManager.swift */,
+			);
+			path = GlobalManager;
+			sourceTree = "<group>";
+		};
 		5866840A25F0ECC500A662ED = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +96,7 @@
 		5866841525F0ECC500A662ED /* iOSInterview */ = {
 			isa = PBXGroup;
 			children = (
+				3B980583262A852D00DBD80C /* GlobalManager */,
 				58BAB980260324F100337917 /* WorkPreDev */,
 				5870BBF525F1DB2200116656 /* Demo */,
 				5866843025F0F67800A662ED /* ReusableUIViews */,
@@ -146,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				58BAB9812603251000337917 /* GiftRain */,
+				3B8981C6262AFD97003A1E26 /* WorkPreDevHomeViewController.swift */,
 			);
 			path = WorkPreDev;
 			sourceTree = "<group>";
@@ -154,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				58BAB9822603265400337917 /* RainGiftPopUpBaseView.swift */,
+				3B8981C9262AFE2A003A1E26 /* RainGiftPopUpBaseViewController.swift */,
 			);
 			path = GiftRain;
 			sourceTree = "<group>";
@@ -176,6 +195,7 @@
 			name = iOSInterview;
 			packageProductDependencies = (
 				5866843925F1008300A662ED /* SnapKit */,
+				3B980580262A77CE00DBD80C /* MBProgressHUD */,
 			);
 			productName = iOSInterview;
 			productReference = 5866841325F0ECC500A662ED /* iOSInterview.app */;
@@ -206,6 +226,7 @@
 			mainGroup = 5866840A25F0ECC500A662ED;
 			packageReferences = (
 				5866843825F1008300A662ED /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3B98057F262A77CE00DBD80C /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = 5866841425F0ECC500A662ED /* Products */;
 			projectDirPath = "";
@@ -236,9 +257,12 @@
 			files = (
 				5866841B25F0ECC500A662ED /* ViewController.swift in Sources */,
 				5870BBFB25F1DCAF00116656 /* NormalCollectionViewCell.swift in Sources */,
+				3B980585262A856E00DBD80C /* CommonToastManager.swift in Sources */,
 				5866841725F0ECC500A662ED /* AppDelegate.swift in Sources */,
 				5866843225F0F75500A662ED /* DescribedView.swift in Sources */,
 				58BAB9832603265400337917 /* RainGiftPopUpBaseView.swift in Sources */,
+				3B8981C7262AFD97003A1E26 /* WorkPreDevHomeViewController.swift in Sources */,
+				3B8981CA262AFE2A003A1E26 /* RainGiftPopUpBaseViewController.swift in Sources */,
 				58BAB9792602211700337917 /* IrregularGradientView.swift in Sources */,
 				3B699D2025F3192900871B72 /* SubviewOutOfBoundsToSuperviewViewController.swift in Sources */,
 				5866841925F0ECC500A662ED /* SceneDelegate.swift in Sources */,
@@ -451,6 +475,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3B98057F262A77CE00DBD80C /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		5866843825F1008300A662ED /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -462,6 +494,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3B980580262A77CE00DBD80C /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B98057F262A77CE00DBD80C /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
 		5866843925F1008300A662ED /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5866843825F1008300A662ED /* XCRemoteSwiftPackageReference "SnapKit" */;

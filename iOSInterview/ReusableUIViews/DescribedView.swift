@@ -6,10 +6,14 @@
 //
 
 import UIKit
-
+import MBProgressHUD
 
 /// 支持设置一个描述性label以及位置的UIView
-class DescribedView: UIView {
+public class DescribedView: UIView {
+    
+    public var title: String {
+        return label.text ?? "未找到title"
+    }
 
     private let label: UILabel = {
         let label = UILabel()
@@ -65,5 +69,11 @@ class DescribedView: UIView {
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // 自己已经接受了响应，没必要再让父视图也响应点击了
+        CommonToastManager.showInWindow(text: "选中了\(label.text ?? "")")
+        print("touchesBegan 选中了\(label.text ?? "")")
     }
 }
